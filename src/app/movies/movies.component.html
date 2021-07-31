@@ -1,0 +1,9 @@
+Movie:<input type="text" [(ngModel)]="term" />
+<button (click)="searchMovies();">Search</button>
+<div *ngFor="let movie of movies">
+    Title: <span>{{movie.Title}}</span> <br>
+    Year: <span>{{movie.Year}}</span> <br>
+    Type: <span>{{movie.Type}}</span> <br>
+    <img src="{{movie.Poster}}" width="200px" height="200px" />
+
+</div>

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-training';
+  name = 'Prabhav';
+  sizeDefault = 18;
+
+  sizeHandler($event: any) {
+    alert($event);
+  }
 }

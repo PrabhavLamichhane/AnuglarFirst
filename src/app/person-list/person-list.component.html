@@ -1,0 +1,6 @@
+<div *ngFor="let person of persons" >
+    <!-- Name:{{person.name}}<br>
+    Age:{{person.age}}<br>
+    Gender:{{person.gender}}<br> -->
+    <app-person [person]="person" (message)="showMsg($event)"></app-person>
+</div>
